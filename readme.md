@@ -4,27 +4,27 @@
     - sposto la sedia
 
 # start loop    
-    - apro una busta
-        - prendo le carte in mano
-        - le controllo
-            - SE figurina  = rotta/danneggiata 
-                - aggiungi a scarti
+    - finché ho buste
+        - apro una busta
+            - prendo le carte in mano
+            - le controllo
+                - SE figurina  = rotta/danneggiata 
+                    - aggiungi a scarti
 
-            - ALTRIMENTI {
+                - ALTRIMENTI {
             
-                tieni 
+                    tieni 
             
-                - SE carta nuova aggiungi ad ALBUM principale
+                    - SE carta nuova aggiungi ad ALBUM principale
 
-                - ALTRIMENTI // carta = doppiona 
-                aggiungi ALBUM scambi
+                    - ALTRIMENTI // carta = doppiona 
+                    aggiungi ALBUM scambi
 
-                    - Se carta in album scambi >=2 
-                        scambia con amico
+                        - Se carta in album scambi >=2 
+                            scambia con amico
 
-                    - ALTRIMENTI 
-                        tieni
-
+                        - ALTRIMENTI 
+                            tieni
                 }       
                  
     -   riciclo busta
