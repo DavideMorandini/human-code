@@ -10,11 +10,23 @@
             - SE figurina  = rotta/danneggiata 
                 - aggiungi a scarti
 
-            - ALTRIMENTI figurina  = integra tieni
+            - ALTRIMENTI {
+            
+                tieni 
+            
                 - SE carta nuova aggiungi ad ALBUM principale
-                - ALTRIMENTI carta = doppiona agigungi ad ALBUM scambi
-                    - Se carta in album 2 = >=2 scambia con alberto
-                    - ALTRIMENTI tieni
+
+                - ALTRIMENTI // carta = doppiona 
+                aggiungi ALBUM scambi
+
+                    - Se carta in album scambi >=2 
+                        scambia con amico
+
+                    - ALTRIMENTI 
+                        tieni
+
+                }       
+                 
     -   riciclo busta
 # end loop
 
